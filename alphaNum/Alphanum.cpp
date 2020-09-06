@@ -26,7 +26,7 @@ void convert(char* alphanum, char* regular)
 	for (int i = 0; i < strlen(alphanum); i++)
 	{
 		int position = indexof(alpha, toupper(alphanum[i]));
-		if (position != -1)
+		if (position != -1 && position >=0 && position<=26)
 		{
 			regular[i] = num[position];
 		}
