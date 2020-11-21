@@ -13,7 +13,8 @@ int main()
 	char* alphanum = x;
 	char regular[1000] = "";
 	convert(alphanum, regular);
-	printf("%s ---> %s", alphanum, regular);
+	printf("\nYour Code is : %s ", alphanum);
+	printf("\n\nYour converted number is : %s\n\n", regular);
 
 	return 0;
 }
