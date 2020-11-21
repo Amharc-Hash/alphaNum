@@ -7,10 +7,11 @@ int indexof(char*, char);
 int main()
 {
 	char x[100];
+	int checkFalse;
 	printf("Enter your code : ");
-	scanf_s("%[^\n]s", x);
+	gets_s(x);
 	char* alphanum = x;
-	char regular[20] = "";
+	char regular[1000] = "";
 	convert(alphanum, regular);
 	printf("%s ---> %s", alphanum, regular);
 
